@@ -11,7 +11,7 @@ const Project = ({src,mode}) => {
       <div className={`w-full h-full flex justify-center items-center ${mode==='theme-light'?'bg-[#222]':'bg-[#555]'} underline`}>
           View Site
       </div>:
-      <iframe src={src} loading='lazy' sandbox="allow-scripts allow-same-origin" className='w-full h-full'/>}
+      <iframe src={src} sandbox="allow-scripts allow-same-origin" className='w-full h-full'/>}
     </motion.div>
   )
 }
