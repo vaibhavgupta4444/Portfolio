@@ -17,6 +17,7 @@ export default function Bot() {
           scene="https://prod.spline.design/g39g8PWV3LkcOiE3/scene.splinecode"
           onLoad={handleLoad}
           onError={handleError}
+          
         />
       </Suspense>
     </div>
