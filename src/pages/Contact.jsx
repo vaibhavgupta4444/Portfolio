@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { assets } from '../assets/assets'
 import {motion} from 'motion/react'
 import HeaderLine from '../components/HeaderLine';

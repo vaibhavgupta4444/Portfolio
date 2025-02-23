@@ -1,6 +1,5 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Bot from "../components/Bot";
-import {motion} from 'motion/react'
 
 const Home = ({ mode }) => {
   const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
