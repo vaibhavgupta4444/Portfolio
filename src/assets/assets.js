@@ -5,5 +5,5 @@ import resume from './resume.pdf'
 export const assets={
     sun_light,
     send,
-    resume
+    resume,
 }

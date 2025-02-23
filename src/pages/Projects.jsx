@@ -6,7 +6,7 @@ const Projects = ({ mode }) => {
   return (
     <div id='projects'>
       <div className='h-[100vh] flex flex-col md:flex-row items-center justify-center gap-4 md:p-0 p-4'>
-        <Project src={'https://know-weather-at-your-current-location.vercel.app/'} />
+        <Project src={'https://know-weather-at-your-current-location.vercel.app/'} mode={mode} />
         <div className='md:w-1/3 w-full py-4'>
           <p className={`text-lg font-medium ${mode === 'theme-light' ? 'text-[#222]' : 'text-[#E0E0E0]'}`}>Know Your Weather</p>
           <HeaderLine/>
@@ -15,7 +15,7 @@ const Projects = ({ mode }) => {
       </div>
 
       <div className='h-[100vh] flex flex-col md:flex-row-reverse items-center justify-center gap-4 md:p-0 p-4'>
-        <Project src={'https://forever-frontend-kohl.vercel.app/'} />
+        <Project src={'https://forever-frontend-kohl.vercel.app/'} mode={mode} />
         <div className='md:w-1/3 w-full py-4'>
           <p className={`text-lg font-medium ${mode === 'theme-light' ? 'text-[#222]' : 'text-[#E0E0E0]'}`}>An E-commerce Website: Forever</p>
           <HeaderLine/>
