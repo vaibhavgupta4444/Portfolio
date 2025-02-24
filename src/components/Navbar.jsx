@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { motion } from 'motion/react';
 import ThemeButton from './ThemeButton';
 
 const Navbar = ({ mode, set }) => {
@@ -43,12 +44,14 @@ const Navbar = ({ mode, set }) => {
           <ThemeButton set={set} mode={mode} />
         </div>
         {!sidemenu && (
-          <button
+          <motion.button
+            whileTap={{ opacity: 0.5, scale: 0.95 }}
+            transition={{ type: 'spring', duration: 0.5 }}
             onClick={() => setSidemenu(true)}
             className='block md:hidden hover:bg-gray-400/30 p-4'
           >
             <i className="fa-solid fa-bars hover:scale-105 transition-all duration-200"></i>
-          </button>
+          </motion.button>
         )}
       </div>
 
@@ -62,12 +65,14 @@ const Navbar = ({ mode, set }) => {
           <a href='/' onClick={() => setSidemenu(false)}>
             <p className='text-3xl font-bold'>V</p>
           </a>
-          <button
+          <motion.button
+            whileTap={{ scale: 0.95, opacity: 0.5 }}
+            transition={{ type: 'spring', duration: 0.5 }}
             onClick={() => setSidemenu(false)}
             className='p-4 hover:bg-gray-400/30'
           >
             <i className="fa-solid fa-xmark text-xl"></i>
-          </button>
+          </motion.button>
         </div>
         <div className='flex flex-col items-center justify-center gap-4 h-[80vh] w-full text-xl hover:scale-105 transition-all duration-200'>
           <a onClick={() => setSidemenu(false)} href="#about">About</a>
@@ -86,4 +91,5 @@ const Navbar = ({ mode, set }) => {
     </>
   );
 };
+
 export default Navbar;

@@ -2,6 +2,7 @@
 
 *{
     font-family: "Orbitron", serif;
+
 }
 
 .theme-light{
@@ -13,13 +14,16 @@
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.theme-light .btn-contact{
-    background-color: #222222;
-    color: #F5F5F5;
+.theme-light input{
+    background-color: #F5F5F5;
 }
 
-.btn-contact{
-    background-color: #FF007A;
+.theme-light textarea{
+    background-color: #F5F5F5;
+}
+
+.theme-light .btn-contact{
+    background-color: #222222;
     color: #F5F5F5;
 }
 
@@ -88,20 +92,12 @@ input{
     transition: all 0.2s linear;
 }
 
-.theme-light input{
-    background-color: #F5F5F5;
-}
-
-.theme-light textarea{
-    background-color: #F5F5F5;
-}
-
 input:focus{
     border-bottom-color: #FF007A;
     
 }
 
-.theme-light input textarea{
+.theme-light input{
     border-bottom-color: #555;
 }
 
@@ -109,6 +105,9 @@ input:focus{
     border-bottom-color: #000;
 }
 
+.theme-light textarea{
+    border-bottom-color: #555;
+}
 
 .theme-light textarea:focus{
     border-bottom-color: #000;
@@ -122,6 +121,7 @@ textarea{
 
 textarea:focus{
     border-bottom-color: #FF007A;
+    
 }
 
 textarea::-webkit-scrollbar{
@@ -141,31 +141,5 @@ textarea::-webkit-scrollbar{
 @media screen and (width<40rem) {
     .bot{
         clip-path: polygon(0% 0%,100% 0%,100% 71%,0% 71%);
-    }
-}
-
-.link{
-    color: #FF007A;
-}
-
-.theme-light .link{
-    color: #007BFF;
-}
-
-
-.animation-above{
-    animation: animation-above 1s linear;
-    animation-timeline:view();
-    animation-range: entry 0% cover 30%;
-}
-
-@keyframes animation-above{
-    0%{
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
     }
 }

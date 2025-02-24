@@ -35,7 +35,7 @@ const Home = ({ mode }) => {
     <div className='h-[100vh] flex items-center justify-center'>
       <div className="absolute z-10">
         <p id='name' className='pb-8 font-medium text-xl'>{displayedText.split("").map((char, index) => (
-          <span key={index} className="mx-1">
+          <span key={index} className="animate-bounce mx-1">
             {char}
           </span>
         ))}</p>
