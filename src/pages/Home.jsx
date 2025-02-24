@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Bot from "../components/Bot";
+import {motion} from 'motion/react'
 
 const Home = ({ mode }) => {
   const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -41,7 +42,7 @@ const Home = ({ mode }) => {
         ))}</p>
         <div className={`text-4xl font-semibold md:text-7xl ${mode==='theme-light'?'text-[#555]':'text-[#AAAAAA]'}`}>
           <span className='flex items-center pb-2'>Full Stack <hr className='w-20 md:w-[20vh] xl:w-[40vh] h-0.5 border-none bg-[#333333]' /></span>
-          <span id="animate"> Web Developer</span></div>
+          <motion.span initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:3}}> Web Developer</motion.span></div>
       </div>
       <div className="absolute right-0 h-full w-full z-0">
         <Bot />

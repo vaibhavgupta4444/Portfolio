@@ -16,12 +16,12 @@ const App = () => {
   },[]);
 
   return (
-    <div className={`${theme}`}>
+    <div className={`${theme==='theme-light'?'bg-[#F5F5F5] text-[#555]':'bg-[#121212] text-[#E0E0E0]'} ${theme}`}>
       <Navbar mode={theme} set={setTheme}/>
       <Home mode={theme} />
       <About mode={theme}/>
       <Projects mode={theme} />
-      <Contact/>
+      <Contact mode={theme}/>
       <Footer/>
     </div>
   )

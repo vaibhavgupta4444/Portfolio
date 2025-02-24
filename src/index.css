@@ -5,56 +5,9 @@
 
 }
 
-.theme-light{
-    background-color: #F5F5F5;
-    color: #555;
-}
-
-.theme-light .sidebar{
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-.theme-light input{
-    background-color: #F5F5F5;
-}
-
-.theme-light textarea{
-    background-color: #F5F5F5;
-}
-
-.theme-light .btn-contact{
-    background-color: #222222;
-    color: #F5F5F5;
-}
-
-.theme-dark{
-    background-color: #121212;
-    color: #E0E0E0;
-}
-
-
-.theme-dark .sidebar{
-    background-color: rgba(20,20,20,0.9);
-    
-}
-
-
 button{
     transition: all;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%,90% 100%,0% 100%);
-}
-
-#animate{
-    animation: animate 3s linear 1;
-}
-
-@keyframes animate {
-    0%{
-        opacity: 0;
-    }
-    100%{  
-        opacity: 1;
-    }
 }
 
 a:hover{
@@ -87,43 +40,6 @@ a:hover{
     clip-path: polygon(0% 0%, 100% 0%,100% 25%,15% 25%,13% 75%,3% 75%,1% 25%,0% 25%);
 }
 
-input{
-    outline: none;
-    transition: all 0.2s linear;
-}
-
-input:focus{
-    border-bottom-color: #FF007A;
-    
-}
-
-.theme-light input{
-    border-bottom-color: #555;
-}
-
-.theme-light input:focus{
-    border-bottom-color: #000;
-}
-
-.theme-light textarea{
-    border-bottom-color: #555;
-}
-
-.theme-light textarea:focus{
-    border-bottom-color: #000;
-}
-
-textarea{
-    outline: none;
-    transition: all 0.2s linear;
-    resize: none;
-}
-
-textarea:focus{
-    border-bottom-color: #FF007A;
-    
-}
-
 textarea::-webkit-scrollbar{
     display: none;
 }
@@ -133,12 +49,6 @@ textarea::-webkit-scrollbar{
 }
 
 @media screen and (width<64rem) {
-    .bot{
-        clip-path: polygon(0% 0%,100% 0%,100% 90%,75% 90%,75% 100%,0% 100% );
-    }
-}
-
-@media screen and (width<40rem) {
     .bot{
         clip-path: polygon(0% 0%,100% 0%,100% 71%,0% 71%);
     }
