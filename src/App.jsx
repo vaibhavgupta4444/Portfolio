@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <div className={`${theme==='theme-light'?'bg-[#F5F5F5] text-[#555]':'bg-[#121212] text-[#E0E0E0]'} ${theme}`}>
+      <ToastContainer/>
       <Navbar mode={theme} set={setTheme}/>
       <Home mode={theme} />
       <About mode={theme}/>
