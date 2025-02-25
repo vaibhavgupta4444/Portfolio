@@ -57,7 +57,7 @@ const Navbar = ({ mode, set }) => {
 
       {/* Small Screen Sidebar */}
       <div
-        className={`flex flex-col items-center z-50 justify-between md:hidden fixed h-[100vh] w-full ${mode==='theme-light'?'bg-[#F5F5F5]/90':'bg-[#121212]/90'} ${
+        className={`flex flex-col items-center z-50 justify-between md:hidden fixed h-[100vh] w-full ${mode==='theme-light'?'bg-[#F5F5F5]/90':'bg-[#121212]'} ${
           sidemenu ? 'top-0' : 'top-[-100vh]'
         } transition-all duration-500`}
       >
