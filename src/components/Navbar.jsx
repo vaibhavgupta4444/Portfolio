@@ -57,13 +57,13 @@ const Navbar = ({ mode, set }) => {
 
       {/* Small Screen Sidebar */}
       <div
-        className={`flex flex-col items-center z-50 justify-between md:hidden fixed h-[100vh] w-full sidebar ${
+        className={`flex flex-col items-center z-50 justify-between md:hidden fixed h-[100vh] w-full ${mode==='theme-light'?'bg-[#F5F5F5]/95':'bg-[#121212]/95'} ${
           sidemenu ? 'top-0' : 'top-[-100vh]'
         } transition-all duration-500`}
       >
         <div className='flex justify-between items-center w-full px-6 py-8'>
           <a href='/' onClick={() => setSidemenu(false)}>
-          <img className='w-8' src={`${mode==='theme-light'?'/lightModeLogo.png':'/darkModeLogo.png'}`} alt="" />
+          <img className='w-4 md:w-6' src={`${mode==='theme-light'?'/lightModeLogo.png':'/darkModeLogo.png'}`} alt="" />
           </a>
           <motion.button
             whileTap={{ scale: 0.95, opacity: 0.5 }}
