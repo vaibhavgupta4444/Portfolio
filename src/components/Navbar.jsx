@@ -25,7 +25,7 @@ const Navbar = ({ mode, set }) => {
           {!sidemenu && (
             <div>
               <a href='/' className={'block'}>
-                <p className='text-3xl font-bold'>V</p>
+                <img className='w-4 md:w-6' src={`${mode==='theme-light'?'/lightModeLogo.png':'/darkModeLogo.png'}`} alt="" />
               </a>
             </div>
           )}
@@ -63,7 +63,7 @@ const Navbar = ({ mode, set }) => {
       >
         <div className='flex justify-between items-center w-full px-6 py-8'>
           <a href='/' onClick={() => setSidemenu(false)}>
-            <p className='text-3xl font-bold'>V</p>
+          <img className='w-8' src={`${mode==='theme-light'?'/lightModeLogo.png':'/darkModeLogo.png'}`} alt="" />
           </a>
           <motion.button
             whileTap={{ scale: 0.95, opacity: 0.5 }}

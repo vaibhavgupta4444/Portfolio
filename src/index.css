@@ -50,6 +50,6 @@ textarea::-webkit-scrollbar{
 
 @media screen and (width<64rem) {
     .bot{
-        clip-path: polygon(0% 0%,100% 0%,100% 71%,0% 71%);
+        clip-path: polygon(0% 0%,100% 0%,100% 80%,0% 80%);
     }
 }
