@@ -4,7 +4,7 @@ import HeaderLine from '../components/HeaderLine'
 
 const About = ({mode}) => {
   return (
-    <div className='h-[100vh] flex flex-col md:flex-row gap-4 items-center justify-center md:p-0 p-4' id='about'>
+    <div className='flex flex-col md:flex-row gap-4 items-center justify-center md:p-0 p-4' id='about'>
       <div className='md:w-1/2 w-full'>
         <p className={`text-xl md:text-2xl py-4 font-semibold ${mode==='theme-light'?'text-[#222]':'text-[#E0E0E0]'}`}>Hey, I'm Vaibhav</p>
         <HeaderLine/>
@@ -22,8 +22,8 @@ const About = ({mode}) => {
           <a href={assets.resume} download={assets.resume}><motion.button whileTap={{ scale: 0.95 }} className={`mt-4 btn-contact text-[#F5F5F5] ${mode==='theme-light'?'bg-[#222222]':'bg-[#FF007A]'} p-4`}>Download Resume</motion.button></a>
         </motion.div>
       </div>
-      <div className='w-[30vw]'>
-        {/* <img src={assets.me} alt="" /> */}
+      <div className='md:w-[30vw] w-full'>
+        <img src={assets.profileImage} alt="My Profile Image" loading='lazy' />
       </div>
     </div>
   )
