@@ -52,7 +52,7 @@ const Contact = ({mode}) => {
       <div className='xl:w-1/2 sm:w-4/5 w-full p-4'>
         <p className='text-2xl pb-8'>Contact Me</p>
         <HeaderLine/>
-        <motion.form initial={{x:-50,opacity:0}} whileInView={{x:0,opacity:1}} transition={{type:'spring',duration:0.5}} onSubmit={onSubmit} className='flex flex-col gap-10 py-12'>
+        <motion.form initial={{x:-50,opacity:0}} whileInView={{x:0,opacity:1}} transition={{type:'spring',duration:1}} onSubmit={onSubmit} className='flex flex-col gap-10 py-12'>
           <input className={`p-4 border-b border-[#333333] text-[#777] ${mode==='theme-light'?'bg-[#F5F5F5] border-b-[#555] focus:border-b-[#000]':'bg-[#121212] focus:border-b-[#FF007A]'} outline-none transition-all duration-200`} name='email' value={email} onChange={(e)=>setEmail(e.target.value)}  type="email" placeholder='JoeDoe@gmail.com' required />
           <textarea className={`p-4 border-b resize-none border-[#333333] text-[#777] ${mode==='theme-light'?'bg-[#F5F5F5] border-b-[#555] focus:border-b-[#000]':'bg-[#121212] focus:border-b-[#FF007A]'} outline-none transition-all duration-200`} rows={'1'} name="message" value={message} onChange={(e)=>onChangeHandler(e)} placeholder='Say hello......' required>
           </textarea>
