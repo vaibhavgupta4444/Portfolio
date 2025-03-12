@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import Bot from "../components/Bot";
+import Particle from "../components/Particle";
 import {motion} from 'motion/react'
 
 const Home = ({ mode }) => {
@@ -45,7 +45,7 @@ const Home = ({ mode }) => {
           <motion.span initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:3}}> Web Developer</motion.span></div>
       </div>
       <div className="absolute right-0 h-full w-full z-0">
-        {/* <Bot /> */}
+        <Particle />
       </div>
     </div>
   )
