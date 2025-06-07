@@ -8,7 +8,6 @@ This is a personal portfolio website built using modern web technologies, featur
 - **Framer Motion** - For smooth animations
 - **Web3Forms** - For handling contact form submissions
 - **React-Toastify** - For notifications and alerts
-- **Spline** - For embedding and rendering 3D models
 - **FontAwesome** - For icons and UI elements
 - **Orbitron** - Font style used for typography
 
@@ -18,7 +17,6 @@ This is a personal portfolio website built using modern web technologies, featur
 - 🚀 **Smooth Animations**: Powered by Framer Motion
 - 📧 **Contact Form**: Uses Web3Forms to receive emails
 - 🔔 **Toast Notifications**: Implemented via React-Toastify
-- 🎭 **3D Model Integration**: Integrated via Spline
 
 ## Installation
 To run this project locally, follow these steps:
