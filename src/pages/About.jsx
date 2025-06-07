@@ -19,7 +19,7 @@ const About = ({mode}) => {
             <p>I'm always open to exciting projects and collaborations. Feel free to <span><a className={`${mode==='theme-light'?'text-[#007BFF] hover:text-[#FF007A]':'text-[#FF007A] hover:text-[#00E5FF]'} transition-all duration-200`} href="#contact">Connect Me</a></span> and let's create something amazing together!</p>
           </div>
           </div>
-          <a href={assets.resume} download={assets.resume}><motion.button whileTap={{ scale: 0.95 }} className={`mt-4 btn-contact text-[#F5F5F5] ${mode==='theme-light'?'bg-[#222222]':'bg-[#FF007A]'} p-4`}>Download Resume</motion.button></a>
+          <a href="https://drive.google.com/file/d/1QU-_nE1cTw9XjAK0HAS2IPw3EjmJbQg8" download={assets.resume}><motion.button whileTap={{ scale: 0.95 }} className={`mt-4 btn-contact text-[#F5F5F5] ${mode==='theme-light'?'bg-[#222222]':'bg-[#FF007A]'} p-4`}>Download Resume</motion.button></a>
         </motion.div>
       </div>
       <div className='md:w-[30vw] w-full'>
